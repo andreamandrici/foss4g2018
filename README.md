@@ -193,18 +193,17 @@ Explore datasets
        `*  r.stats - input LandCover 1995, print area totals, suppress any NULL`
    
    2.  PTA r.stats on multiple rasters:
-     *  convert (few) vectors to rasters:
+       *  convert (few) vectors to rasters:
     
-     ```
-     *  filter protected_areas (eg: "area_geo" >= 10000)
-     *  PTA v.to.rast.attribute	(input protected_areas, iterate over this layer, att wdpaid, resolution 0.00277778)
-     ```
+       ```
+       *  filter protected_areas (eg: "area_geo" >= 10000)
+       *  PTA v.to.rast.attribute	(input protected_areas, iterate over this layer, att wdpaid, resolution 0.00277778)
+       ```
     
-     *  LC: PTA r.stats
-     
-     `*  r.stats - input rasterized PA+LC 1995, print area totals, suppress any NULL`
-     *  LCC: PTA r.stats
-        `*  r.stats - input rasterized PA+LC 1995+LC 2015, print area totals, suppress any NULL`
+       *  LC: PTA r.stats
+       `*  r.stats - input rasterized PA+LC 1995, print area totals, suppress any NULL`
+       *  LCC: PTA r.stats
+       `*  r.stats - input rasterized PA+LC 1995+LC 2015, print area totals, suppress any NULL`
 
 _____________________________________________________________________________________
 
