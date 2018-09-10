@@ -56,7 +56,7 @@ Participants are requested to download their own copies of data which are going 
 The following links may require registration:
 
 1.  [GADM](https://gadm.org/) (please note: we currently use [FAO GAUL data](http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691), but GADM is open):
-   *  [Tanzania Admin Areas](https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_TZA_shp.zip)
+   *   [Tanzania Admin Areas](https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_TZA_shp.zip)
 2.  [Marine Regions EEZ](http://www.marineregions.org/):
    *  [Tanzania EEZ](http://geo.vliz.be/geoserver/wfs?request=getfeature&service=wfs&version=1.0.0&typename=MarineRegions:eez&outputformat=SHAPE-ZIP&filter=%3CPropertyIsEqualTo%3E%3CPropertyName%3Emrgid%3C%2FPropertyName%3E%3CLiteral%3E8479%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E)
 3.  [UNEP-WCMC WDPA](https://www.protectedplanet.net):
