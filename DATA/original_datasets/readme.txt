@@ -1,5 +1,5 @@
 Please copy here all downloaded datasets.
-This folder should contain:
+At the end of the process this folder should contain:
 
 eez.zip
 ESACCI-LC-L4-LCCS-Map-300m-P1Y-1995-v2.0.7.tif
