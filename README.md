@@ -167,33 +167,33 @@ Explore datasets
 
 1.  Basic intersection of vector objects (Spatial Query Plugin)
 
-  Load protected_areas and species  
+   Load protected_areas and species  
   
-  ```	
-  *  activate spatial query plugin
-  *  select a protected area
-  *  find intersecting species 
-  ```
+   ```	
+   *  activate spatial query plugin
+   *  select a protected area
+   *  find intersecting species 
+   ```
 
 2.  Zonal Statistics (ZS) on continuous raster (Processing Toolbox Algorithms: PTA)
 
-  Load country_dissolved, protected_areas and DEM  
-  
-  ```
-  *  PTA ZS on country area+DEM
-  *  PTA ZS on protected areas+DEM 
-  ```
+   Load country_dissolved, protected_areas and DEM  
+   
+   ```
+   *  PTA ZS on country area+DEM
+   *  PTA ZS on protected areas+DEM 
+   ```
 
 3. Classes Extent in a discrete raster (PTA)
 
-  Load protected_areas, LC 1995, LC 2015 (check resolution: 0.00277778)
+   Load protected_areas, LC 1995, LC 2015 (check resolution: 0.00277778)
 
-  1.  PTA r.stats on a single raster
+   1.  PTA r.stats on a single raster
   
-   `*  r.stats - input LandCover 1995, print area totals, suppress any NULL`
+       `*  r.stats - input LandCover 1995, print area totals, suppress any NULL`
    
-  2.  PTA r.stats on multiple rasters:
-    *  convert (few) vectors to rasters:
+   2.  PTA r.stats on multiple rasters:
+     *  convert (few) vectors to rasters:
     
     ```
     *  filter protected_areas (eg: "area_geo" >= 10000)
