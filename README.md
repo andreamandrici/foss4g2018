@@ -56,39 +56,27 @@ Participants are requested to download their own copies of data which are going 
 The following links may require registration:
 
 1.  [GADM](https://gadm.org/) (please note: we currently use [FAO GAUL data](http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691), but GADM is open):
-
-	*	[Tanzania Admin Areas](https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_TZA_shp.zip)
-
+    *  [Tanzania Admin Areas](https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_TZA_shp.zip)
 2.  [Marine Regions EEZ](http://www.marineregions.org/):
-
-	*	[Tanzania EEZ](http://geo.vliz.be/geoserver/wfs?request=getfeature&service=wfs&version=1.0.0&typename=MarineRegions:eez&outputformat=SHAPE-ZIP&filter=%3CPropertyIsEqualTo%3E%3CPropertyName%3Emrgid%3C%2FPropertyName%3E%3CLiteral%3E8479%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E)
-
+    *  [Tanzania EEZ](http://geo.vliz.be/geoserver/wfs?request=getfeature&service=wfs&version=1.0.0&typename=MarineRegions:eez&outputformat=SHAPE-ZIP&filter=%3CPropertyIsEqualTo%3E%3CPropertyName%3Emrgid%3C%2FPropertyName%3E%3CLiteral%3E8479%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E)
 3.  [UNEP-WCMC WDPA](https://www.protectedplanet.net):
-
-	*	[WDPA current](http://wcmc.io/wdpa_current_release)
+	  *  [WDPA current](http://wcmc.io/wdpa_current_release)
 	
-	Extract the \*.gdb file from the downloaded zip and rename it as "wdpa.gdb", then delete the zip archive.
-
+	  Extract the \*.gdb file from the downloaded zip and rename it as "wdpa.gdb", then delete the zip archive.
 4.  [ESA CCI LC](https://www.esa-landcover-cci.org/):
-
-	* ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1995-v2.0.7.tif
- 	* ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2015-v2.0.7.tif
-
+    * ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1995-v2.0.7.tif
+    * ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2015-v2.0.7.tif
 5.  [IUCN Redlist](http://www.iucnredlist.org):
-
-	*	[Cheetah](http://www.iucnredlist.org/download_spatial_data/species_219)
-	*	[Dugong](http://www.iucnredlist.org/download_spatial_data/species_6909)
-	*	[Giraffe](http://www.iucnredlist.org/download_spatial_data/species_9194)
-	*	[African Elephant](http://www.iucnredlist.org/download_spatial_data/species_12392)
-	*	[Whale Shark](http://www.iucnredlist.org/download_spatial_data/species_19488)
-
+    *	[Cheetah](http://www.iucnredlist.org/download_spatial_data/species_219)
+    *	[Dugong](http://www.iucnredlist.org/download_spatial_data/species_6909)
+    *	[Giraffe](http://www.iucnredlist.org/download_spatial_data/species_9194)
+    *	[African Elephant](http://www.iucnredlist.org/download_spatial_data/species_12392)
+    *	[Whale Shark](http://www.iucnredlist.org/download_spatial_data/species_19488)
 6.  [GEBCO terrain model](https://www.gebco.net):
-
-	*	[2014 30 arc-second grid](https://www.gebco.net/data_and_products/gridded_bathymetry_data), providing the following parameters on "Select your data set" section:
-
-     *  Search Box Coordinates = "29,-12,44,0"
-     *  "GEBCO_2014 Grid (30 arc-second interval)"
-     *  "User-defined area - INT16 GeoTIFF (data)".
+    *	[2014 30 arc-second grid](https://www.gebco.net/data_and_products/gridded_bathymetry_data), providing the following parameters on "Select your data set" section:
+      *  Search Box Coordinates = "29,-12,44,0"
+      *  "GEBCO_2014 Grid (30 arc-second interval)"
+      *  "User-defined area - INT16 GeoTIFF (data)".
   
     Extract the \*.tif file from the downloaded zip and rename it as "gebco.tif", then delete the zip archive.
 
@@ -203,11 +191,11 @@ Explore datasets
     
        *  LC: PTA r.stats
        
-         `*  r.stats - input rasterized PA+LC 1995, print area totals, suppress any NULL`
+          `*  r.stats - input rasterized PA+LC 1995, print area totals, suppress any NULL`
        
        *  LCC: PTA r.stats
        
-         `*  r.stats - input rasterized PA+LC 1995+LC 2015, print area totals, suppress any NULL`
+          `*  r.stats - input rasterized PA+LC 1995+LC 2015, print area totals, suppress any NULL`
 
 _____________________________________________________________________________________
 
