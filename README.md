@@ -82,12 +82,15 @@ The following links may require registration:
 	*	[African Elephant](http://www.iucnredlist.org/download_spatial_data/species_12392)
 	*	[Whale Shark](http://www.iucnredlist.org/download_spatial_data/species_19488)
 
-6.  [GEBCO terrain model](https://www.gebco.net): [2014 30 arc-second grid](https://www.gebco.net/data_and_products/gridded_bathymetry_data), providing the following parameters on "Select your data set" section:
-    *  Search Box Coordinates = "29,-12,44,0"
+6.  [GEBCO terrain model](https://www.gebco.net):
+
+	*	[2014 30 arc-second grid](https://www.gebco.net/data_and_products/gridded_bathymetry_data), providing the following parameters on "Select your data set" section:
+		
+	  *	Search Box Coordinates = "29,-12,44,0"
     *  "GEBCO_2014 Grid (30 arc-second interval)"
     *  "User-defined area - INT16 GeoTIFF (data)".
   
-		Extract the \*.tif file from the downloaded zip and rename it as "gebco.tif", then delete the zip archive.
+   Extract the \*.tif file from the downloaded zip and rename it as "gebco.tif", then delete the zip archive.
 
 Please copy downloaded and renamed datasets in /usbdata/foss4g/DATA/original_datasets folder.
 At the end of the process, this folder should contain:
@@ -117,9 +120,9 @@ Install a decent editor:
 Be sure to have correctly downloaded geany_\*.deb packages from the "About the system" section
 
 ```
--	Launch LXTerminal
-- cd /media/user/usbdata/foss4g/scripts/			
-- ./script_01_install_geany.sh
+*  Launch LXTerminal
+*  cd /media/user/usbdata/foss4g/scripts/			
+*  ./script_01_install_geany.sh
 ```
 
 ### online
@@ -127,13 +130,14 @@ Be sure to have correctly downloaded geany_\*.deb packages from the "About the s
 you need to connect to internet before; since unreliability of network in Tanzania, we suggest to not do it.
 
 ```
--	sudo apt-get install geany
+*  sudo apt-get install geany
 ```
 Password is "user".
 
 if needed, setup your keyboard
+
 ```
--	./script_02_reconfigure_keyboard.sh
+*  ./script_02_reconfigure_keyboard.sh
 ```
 _____________________________________________________________________________________
 
@@ -146,7 +150,7 @@ ________________________________________________________________________________
 From Qgis Browser Panel
 
 ```
-add folder /media/user/usbdata/foss4g/DATA to Favourites
+*  add folder /media/user/usbdata/foss4g/DATA to Favourites
 ```
 
 Explore datasets
