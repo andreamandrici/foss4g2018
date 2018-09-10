@@ -74,9 +74,9 @@ The following links may require registration:
     *	[Whale Shark](http://www.iucnredlist.org/download_spatial_data/species_19488)
 6.  [GEBCO terrain model](https://www.gebco.net):
     *	[2014 30 arc-second grid](https://www.gebco.net/data_and_products/gridded_bathymetry_data), providing the following parameters on "Select your data set" section:
-      *  Search Box Coordinates = "29,-12,44,0"
-      *  "GEBCO_2014 Grid (30 arc-second interval)"
-      *  "User-defined area - INT16 GeoTIFF (data)".
+        *  Search Box Coordinates = "29,-12,44,0"
+        *  "GEBCO_2014 Grid (30 arc-second interval)"
+        *  "User-defined area - INT16 GeoTIFF (data)".
   
     Extract the \*.tif file from the downloaded zip and rename it as "gebco.tif", then delete the zip archive.
 
@@ -294,6 +294,7 @@ From file manager, open the above script with Geany, and have a look at it and a
 While the above run, from a new LXTerminal
 
 `*  htop`
+
 You can see from here how all cores are used in parallel.
 
 _____________________________________________________________________________________
