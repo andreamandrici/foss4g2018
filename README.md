@@ -129,18 +129,15 @@ Be sure to have correctly downloaded geany_\*.deb packages from the "About the s
 
 you need to connect to internet before; since unreliability of network in Tanzania, we suggest to not do it.
 
-```
-*  sudo apt-get install geany
-```
+`*  sudo apt-get install geany`
+
 Password is "user".
 
 if needed, setup your keyboard
 
-```
-*  ./script_02_reconfigure_keyboard.sh
-```
-_____________________________________________________________________________________
+`*  ./script_02_reconfigure_keyboard.sh`
 
+_____________________________________________________________________________________
 
 ## Desktop OS GIS tools
 
@@ -149,9 +146,7 @@ ________________________________________________________________________________
 
 From Qgis Browser Panel
 
-```
-*  add folder /media/user/usbdata/foss4g/DATA to Favourites
-```
+`*  add folder /media/user/usbdata/foss4g/DATA to Favourites`
 
 Explore datasets
 
@@ -173,37 +168,43 @@ Explore datasets
 1.  Basic intersection of vector objects (Spatial Query Plugin)
 
   Load protected_areas and species  
+  
   ```	
   *  activate spatial query plugin
   *  select a protected area
   *  find intersecting species 
   ```
+
 2.  Zonal Statistics (ZS) on continuous raster (Processing Toolbox Algorithms: PTA)
 
   Load country_dissolved, protected_areas and DEM  
+  
   ```
   *  PTA ZS on country area+DEM
   *  PTA ZS on protected areas+DEM 
   ```
+
 3. Classes Extent in a discrete raster (PTA)
 
   Load protected_areas, LC 1995, LC 2015 (check resolution: 0.00277778)
 
   1.  PTA r.stats on a single raster
-	```
-	r.stats - input LandCover 1995, print area totals, suppress any NULL
-	```
+  
+   `*  r.stats - input LandCover 1995, print area totals, suppress any NULL`
+   
   2.  PTA r.stats on multiple rasters:
     *  convert (few) vectors to rasters:
     
     ```
-		*  filter protected_areas (eg: "area_geo" >= 10000)
-		  *  PTA v.to.rast.attribute	(input protected_areas, iterate over this layer, att wdpaid, resolution 0.00277778)
+    *  filter protected_areas (eg: "area_geo" >= 10000)
+    *  PTA v.to.rast.attribute	(input protected_areas, iterate over this layer, att wdpaid, resolution 0.00277778)
+    ```
+    
     *  LC: PTA r.stats
-		  *  r.stats - input rasterized PA+LC 1995, print area totals, suppress any NULL
+   *  r.stats - input rasterized PA+LC 1995, print area totals, suppress any NULL
     *  LCC: PTA r.stats
 		  *  r.stats - input rasterized PA+LC 1995+LC 2015, print area totals, suppress any NULL
-  ```
+
 _____________________________________________________________________________________
 
 
