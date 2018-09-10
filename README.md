@@ -193,6 +193,7 @@ Explore datasets
        `*  r.stats - input LandCover 1995, print area totals, suppress any NULL`
    
    2.  PTA r.stats on multiple rasters:
+       
        *  convert (few) vectors to rasters:
     
        ```
@@ -201,8 +202,11 @@ Explore datasets
        ```
     
        *  LC: PTA r.stats
+       
        `*  r.stats - input rasterized PA+LC 1995, print area totals, suppress any NULL`
+       
        *  LCC: PTA r.stats
+       
        `*  r.stats - input rasterized PA+LC 1995+LC 2015, print area totals, suppress any NULL`
 
 _____________________________________________________________________________________
@@ -219,12 +223,12 @@ ________________________________________________________________________________
    *  Create a new object/new extension/postgis in foss4g DB
 2.  Connect to foss4g DB from QGIS
     *  Create a new PostGIS connection
-    *  host=localhost
-    *  database=foss4g
-    *  username and pwd=user (save)
-    *  only look in the public schema
-    *  also list tables with no geometry
-    *  refresh and connect from the tembo icon
+       *  host=localhost
+       *  database=foss4g
+       *  username and pwd=user (save)
+       *  only look in the public schema
+       *  also list tables with no geometry
+    *  refresh and connect from the elephant icon
 3.  Import dataset into foss4g DB from QGIS
 
     Load country_dissolved, protected areas and species
