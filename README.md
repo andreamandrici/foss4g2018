@@ -195,6 +195,7 @@ Explore datasets
 	```
   2.  PTA r.stats on multiple rasters:
     *  convert (few) vectors to rasters:
+    
     ```
 		*  filter protected_areas (eg: "area_geo" >= 10000)
 		  *  PTA v.to.rast.attribute	(input protected_areas, iterate over this layer, att wdpaid, resolution 0.00277778)
