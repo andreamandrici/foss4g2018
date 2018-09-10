@@ -190,24 +190,24 @@ Explore datasets
 
    1.  PTA r.stats on a single raster
   
-       `*  r.stats - input LandCover 1995, print area totals, suppress any NULL`
+      `*  r.stats - input LandCover 1995, print area totals, suppress any NULL`
    
    2.  PTA r.stats on multiple rasters:
        
        *  convert (few) vectors to rasters:
     
-       ```
-       *  filter protected_areas (eg: "area_geo" >= 10000)
-       *  PTA v.to.rast.attribute	(input protected_areas, iterate over this layer, att wdpaid, resolution 0.00277778)
-       ```
+         ```
+          *  filter protected_areas (eg: "area_geo" >= 10000)
+          *  PTA v.to.rast.attribute	(input protected_areas, iterate over this layer, att wdpaid, resolution 0.00277778)
+         ```
     
        *  LC: PTA r.stats
        
-       `*  r.stats - input rasterized PA+LC 1995, print area totals, suppress any NULL`
+         `*  r.stats - input rasterized PA+LC 1995, print area totals, suppress any NULL`
        
        *  LCC: PTA r.stats
        
-       `*  r.stats - input rasterized PA+LC 1995+LC 2015, print area totals, suppress any NULL`
+         `*  r.stats - input rasterized PA+LC 1995+LC 2015, print area totals, suppress any NULL`
 
 _____________________________________________________________________________________
 
@@ -281,16 +281,20 @@ If something of the above goes wrong, the following script will create the neede
 
 From LXTerminal
 
-				*  cd /media/user/usbdata/foss4g/scripts/
-				*  ./script_04_create_functions.sh
+```
+*  cd /media/user/usbdata/foss4g/scripts/
+*  ./script_04_create_functions.sh
+```
 
 #### Static classes extent on discrete raster
 
 From LXTerminal
 
-				*  cd /media/user/usbdata/foss4g/scripts/
-				*  ./script_05_final.sh
-				
+```
+*  cd /media/user/usbdata/foss4g/scripts/
+*  ./script_05_final.sh
+```
+
 From file manager, open the above script with Geany, and have a look at it and at related SQL code. It does:
 
 *  performs the raster analyis looping through each protected area, for each epoch
@@ -301,7 +305,8 @@ From file manager, open the above script with Geany, and have a look at it and a
 
 While the above run, from a new LXTerminal
 
-				*  htop
+`*  htop`
+You can see from here how all cores are used in parallel.
 
 _____________________________________________________________________________________
 
@@ -312,24 +317,35 @@ ________________________________________________________________________________
 
 From LXTerminal
 
-				*  cd /media/user/usbdata/foss4g/scripts/rest/
-				*  python server.py &
+```
+*  cd /media/user/usbdata/foss4g/scripts/rest/
+*  python server.py &
+```
 
 From Firefox
 
-				*  visit http://localhost:8888/rest_doc.py
-
+```
+*  visit http://localhost:8888/rest_doc.py
+```
 To stop the rest server, from LXTerminal
 
-				* ps
-				* take note of the "python" PID. EG:
-					PID TTY          TIME CMD
-					5528 pts/0    00:00:00 bash
-					10122 pts/0    00:00:00 python 
-					10229 pts/0    00:00:00 ps
-				On the example above PID is 10122
-				* kill the noted PID. EG:
-					kill 10122
+```
+* ps
+* take note of the "python" PID.
+```
+EG:
+
+```
+  PID TTY          TIME CMD
+  5528 pts/0    00:00:00 bash
+  10122 pts/0    00:00:00 python 
+  10229 pts/0    00:00:00 ps
+```
+
+On the example above PID is 10122
+`* kill the noted PID.`
+EG:
+`kill 10122`
 
 ## Proceed with the next session: [web development](/media/user/usbdata/foss4g/docs/docs2_web.html)
 
