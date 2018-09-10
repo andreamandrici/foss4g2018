@@ -251,19 +251,19 @@ From file manager, open the above script with Geany, and have a look at it and a
 
 ### Using PostGIS as analysis engine
 
-From PGAdmin Query Editor, open /media/user/usbdata/foss4g/scripts/SQL/
+From PGAdmin Query Editor, open foss4g/scripts/SQL/
 
 #### Spatial queries on intersecting vectors
 
-[Exercise 1](/media/user/usbdata/foss4g/scripts/sql/ex01_vector_intersection.sql)
+[Exercise 1](/scripts/sql/ex01_vector_intersection.sql)
 
 #### Zonal statistics on continuous raster
 
-[Exercise 2](/media/user/usbdata/foss4g/scripts/sql/ex02_raster_analysis_zonal_statistcs.sql)
+[Exercise 2](scripts/sql/ex02_raster_analysis_zonal_statistcs.sql)
 
 #### On the fly classes extent on discrete raster
 
-[Exercise 3](/media/user/usbdata/foss4g/scripts/sql/ex03_raster_extent.sql)
+[Exercise 3](./scripts/sql/ex03_raster_extent.sql)
 
 If something of the above goes wrong, the following script will create the needed functions for the next step (only needed if something didn't work during the previous exercises)				
 
