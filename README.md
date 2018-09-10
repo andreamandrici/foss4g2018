@@ -85,8 +85,7 @@ The following links may require registration:
 6.  [GEBCO terrain model](https://www.gebco.net):
 
 	*	[2014 30 arc-second grid](https://www.gebco.net/data_and_products/gridded_bathymetry_data), providing the following parameters on "Select your data set" section:
-		
-	  *	Search Box Coordinates = "29,-12,44,0"
+	  *	 Search Box Coordinates = "29,-12,44,0"
     *  "GEBCO_2014 Grid (30 arc-second interval)"
     *  "User-defined area - INT16 GeoTIFF (data)".
   
@@ -173,10 +172,11 @@ Explore datasets
 1.  Basic intersection of vector objects (Spatial Query Plugin)
 
   Load protected_areas and species
+  
 ```	
--	activate spatial query plugin
--	select a protected area
--	find intersecting species 
+*  activate spatial query plugin
+*  select a protected area
+*  find intersecting species 
 ```
 
 2.  Zonal Statistics (ZS) on continuous raster (Processing Toolbox Algorithms: PTA)
