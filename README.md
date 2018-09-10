@@ -62,9 +62,8 @@ The following links may require registration:
 *  [UNEP-WCMC WDPA](https://www.protectedplanet.net):
   *  [WDPA current](http://wcmc.io/wdpa_current_release) - Extract the *.gdb file from the downloaded zip and rename it as "wdpa.gdb", then delete the zip archive.
 *  [ESA CCI LC](https://www.esa-landcover-cci.org/):
-
-  *  [Landcover 1995](ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1995-v2.0.7.tif)
-  *  [Landcover 2015](ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2015-v2.0.7.tif)
+  *  ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1995-v2.0.7.tif
+  *  ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2015-v2.0.7.tif
 *  [IUCN Redlist](http://www.iucnredlist.org):
   *  [Cheetah](http://www.iucnredlist.org/download_spatial_data/species_219)
   *  [Dugong](http://www.iucnredlist.org/download_spatial_data/species_6909)
