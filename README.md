@@ -65,26 +65,29 @@ The following links may require registration:
 
 3.  [UNEP-WCMC WDPA](https://www.protectedplanet.net):
 
-  *  [WDPA current](http://wcmc.io/wdpa_current_release) - Extract the *.gdb file from the downloaded zip and rename it as "wdpa.gdb", then delete the zip archive.
+	*	[WDPA current](http://wcmc.io/wdpa_current_release)
+	
+	Extract the \*.gdb file from the downloaded zip and rename it as "wdpa.gdb", then delete the zip archive.
 
 4.  [ESA CCI LC](https://www.esa-landcover-cci.org/):
 
-   ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1995-v2.0.7.tif
-   ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2015-v2.0.7.tif
+	* ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1995-v2.0.7.tif
+ 	* ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2015-v2.0.7.tif
 
 5.  [IUCN Redlist](http://www.iucnredlist.org):
 
-   [Cheetah](http://www.iucnredlist.org/download_spatial_data/species_219)
+   *	[Cheetah](http://www.iucnredlist.org/download_spatial_data/species_219)
    *  [Dugong](http://www.iucnredlist.org/download_spatial_data/species_6909)
    *  [Giraffe](http://www.iucnredlist.org/download_spatial_data/species_9194)
    *  [African Elephant](http://www.iucnredlist.org/download_spatial_data/species_12392)
    *  [Whale Shark](http://www.iucnredlist.org/download_spatial_data/species_19488)
+
 6.  [GEBCO terrain model](https://www.gebco.net): [2014 30 arc-second grid](https://www.gebco.net/data_and_products/gridded_bathymetry_data), providing the following parameters on "Select your data set" section:
     *  Search Box Coordinates = "29,-12,44,0"
     *  "GEBCO_2014 Grid (30 arc-second interval)"
     *  "User-defined area - INT16 GeoTIFF (data)".
   
-  Extract the *.tif file from the downloaded zip and rename it as "gebco.tif", then delete the zip archive.
+		Extract the *.tif file from the downloaded zip and rename it as "gebco.tif", then delete the zip archive.
 
 Please copy downloaded and renamed datasets in /usbdata/foss4g/DATA/original_datasets folder.
 At the end of the process, this folder should contain:
@@ -113,22 +116,21 @@ Install a decent editor:
 
 Be sure to have correctly downloaded geany_*.deb packages from the "About the system" section
 
-				* Launch LXTerminal
-				* cd /media/user/usbdata/foss4g/scripts/
-				
-				* ./script_01_install_geany.sh
+	Launch LXTerminal
+	cd /media/user/usbdata/foss4g/scripts/			
+	./script_01_install_geany.sh
 
 ### online
 
 you need to connect to internet before; since unreliability of network in Tanzania, we suggest to not do it.
 
-        sudo apt-get install geany
+	sudo apt-get install geany
         
 Password is "user".
 
 if needed, setup your keyboard
 
-				* ./script_02_reconfigure_keyboard.sh
+	./script_02_reconfigure_keyboard.sh
 
 _____________________________________________________________________________________
 
@@ -140,7 +142,7 @@ ________________________________________________________________________________
 
 From Qgis Browser Panel
 
-				*  add folder /media/user/usbdata/foss4g/DATA to Favourites
+	add folder /media/user/usbdata/foss4g/DATA to Favourites
 
 Explore datasets
 
@@ -163,22 +165,23 @@ Explore datasets
 
   Load protected_areas and species
 
-				*  activate spatial query plugin
-				*  select a protected area
-				*  find intersecting species 
+	activate spatial query plugin
+	select a protected area
+	find intersecting species 
+	
 2.  Zonal Statistics (ZS) on continuous raster (Processing Toolbox Algorithms: PTA)
 
   Load country_dissolved, protected_areas and DEM
 
-				*  PTA ZS on country area+DEM
-				*  PTA ZS on protected areas+DEM 
+	PTA ZS on country area+DEM
+	PTA ZS on protected areas+DEM 
 
 3. Classes Extent in a discrete raster (PTA)
 
-  Load protected_areas, LC 1995, LC 2015 (check resolution: 0.00277778)
+	Load protected_areas, LC 1995, LC 2015 (check resolution: 0.00277778)
 
   1.  PTA r.stats on a single raster
-				*  r.stats - input LandCover 1995, print area totals, suppress any NULL
+			r.stats - input LandCover 1995, print area totals, suppress any NULL
 
   2.  PTA r.stats on multiple rasters:
     *  convert (few) vectors to rasters:
