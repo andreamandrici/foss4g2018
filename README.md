@@ -55,10 +55,14 @@ Participants are requested to download their own copies of data which are going 
 
 The following links may require registration:
 
-*  [GADM](https://gadm.org/) (please note: we currently use [FAO GAUL data](http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691), but GADM is open): [Tanzania Admin Areas](https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_TZA_shp.zip)
-*  [Marine Regions EEZ](http://www.marineregions.org/): [Tanzania EEZ](http://geo.vliz.be/geoserver/wfs?request=getfeature&service=wfs&version=1.0.0&typename=MarineRegions:eez&outputformat=SHAPE-ZIP&filter=%3CPropertyIsEqualTo%3E%3CPropertyName%3Emrgid%3C%2FPropertyName%3E%3CLiteral%3E8479%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E)
-*  [UNEP-WCMC WDPA](https://www.protectedplanet.net): [WDPA current](http://wcmc.io/wdpa_current_release) - Extract the *.gdb file from the downloaded zip and rename it as "wdpa.gdb", then delete the zip archive.
+*  [GADM](https://gadm.org/) (please note: we currently use [FAO GAUL data](http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691), but GADM is open):
+  *  [Tanzania Admin Areas](https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_TZA_shp.zip)
+*  [Marine Regions EEZ](http://www.marineregions.org/):
+  *  [Tanzania EEZ](http://geo.vliz.be/geoserver/wfs?request=getfeature&service=wfs&version=1.0.0&typename=MarineRegions:eez&outputformat=SHAPE-ZIP&filter=%3CPropertyIsEqualTo%3E%3CPropertyName%3Emrgid%3C%2FPropertyName%3E%3CLiteral%3E8479%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E)
+*  [UNEP-WCMC WDPA](https://www.protectedplanet.net):
+  *  [WDPA current](http://wcmc.io/wdpa_current_release) - Extract the *.gdb file from the downloaded zip and rename it as "wdpa.gdb", then delete the zip archive.
 *  [ESA CCI LC](https://www.esa-landcover-cci.org/):
+
   *  [Landcover 1995](ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1995-v2.0.7.tif)
   *  [Landcover 2015](ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2015-v2.0.7.tif)
 *  [IUCN Redlist](http://www.iucnredlist.org):
