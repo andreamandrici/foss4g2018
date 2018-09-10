@@ -86,11 +86,11 @@ The following links may require registration:
 
 	*	[2014 30 arc-second grid](https://www.gebco.net/data_and_products/gridded_bathymetry_data), providing the following parameters on "Select your data set" section:
 
-    *  Search Box Coordinates = "29,-12,44,0"
-    *  "GEBCO_2014 Grid (30 arc-second interval)"
-    *  "User-defined area - INT16 GeoTIFF (data)".
+     *  Search Box Coordinates = "29,-12,44,0"
+     *  "GEBCO_2014 Grid (30 arc-second interval)"
+     *  "User-defined area - INT16 GeoTIFF (data)".
   
-   Extract the \*.tif file from the downloaded zip and rename it as "gebco.tif", then delete the zip archive.
+    Extract the \*.tif file from the downloaded zip and rename it as "gebco.tif", then delete the zip archive.
 
 Please copy downloaded and renamed datasets in /usbdata/foss4g/DATA/original_datasets folder.
 At the end of the process, this folder should contain:
@@ -327,12 +327,14 @@ From Firefox
 ```
 *  visit http://localhost:8888/rest_doc.py
 ```
+
 To stop the rest server, from LXTerminal
 
 ```
 * ps
 * take note of the "python" PID.
 ```
+
 EG:
 
 ```
@@ -343,8 +345,11 @@ EG:
 ```
 
 On the example above PID is 10122
+
 `* kill the noted PID.`
+
 EG:
+
 `kill 10122`
 
 ## Proceed with the next session: [web development](/media/user/usbdata/foss4g/docs/docs2_web.html)
