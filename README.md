@@ -1,4 +1,4 @@
-# foss4g2018
+# foss4g2018 -- THIS REPO IS WORK IN PROGRESS -- PLEASE COME BACK NEXT WEEK!
 ## Free and Open Source Geospatial Tools for Conservation Planning Workshop - FOSS4G 2018 - Dar Es Salaam
 
 Step by step documentation for developing GIS processing and publish results through Restfull APIs 
@@ -85,7 +85,8 @@ The following links may require registration:
 6.  [GEBCO terrain model](https://www.gebco.net):
 
 	*	[2014 30 arc-second grid](https://www.gebco.net/data_and_products/gridded_bathymetry_data), providing the following parameters on "Select your data set" section:
-	  *	 Search Box Coordinates = "29,-12,44,0"
+
+    *  Search Box Coordinates = "29,-12,44,0"
     *  "GEBCO_2014 Grid (30 arc-second interval)"
     *  "User-defined area - INT16 GeoTIFF (data)".
   
@@ -171,26 +172,22 @@ Explore datasets
 
 1.  Basic intersection of vector objects (Spatial Query Plugin)
 
-  Load protected_areas and species
-  
-```	
-*  activate spatial query plugin
-*  select a protected area
-*  find intersecting species 
-```
-
+  Load protected_areas and species  
+  ```	
+  *  activate spatial query plugin
+  *  select a protected area
+  *  find intersecting species 
+  ```
 2.  Zonal Statistics (ZS) on continuous raster (Processing Toolbox Algorithms: PTA)
 
-  Load country_dissolved, protected_areas and DEM
-
-	```
-	-	PTA ZS on country area+DEM
-	-	PTA ZS on protected areas+DEM 
-	```
-
+  Load country_dissolved, protected_areas and DEM  
+  ```
+  *  PTA ZS on country area+DEM
+  *  PTA ZS on protected areas+DEM 
+  ```
 3. Classes Extent in a discrete raster (PTA)
 
-	Load protected_areas, LC 1995, LC 2015 (check resolution: 0.00277778)
+  Load protected_areas, LC 1995, LC 2015 (check resolution: 0.00277778)
 
   1.  PTA r.stats on a single raster
 	```
@@ -198,14 +195,14 @@ Explore datasets
 	```
   2.  PTA r.stats on multiple rasters:
     *  convert (few) vectors to rasters:
-		```
+    ```
 		*  filter protected_areas (eg: "area_geo" >= 10000)
-				*  PTA v.to.rast.attribute	(input protected_areas, iterate over this layer, att wdpaid, resolution 0.00277778)
+		  *  PTA v.to.rast.attribute	(input protected_areas, iterate over this layer, att wdpaid, resolution 0.00277778)
     *  LC: PTA r.stats
-				*  r.stats - input rasterized PA+LC 1995, print area totals, suppress any NULL
+		  *  r.stats - input rasterized PA+LC 1995, print area totals, suppress any NULL
     *  LCC: PTA r.stats
-				*  r.stats - input rasterized PA+LC 1995+LC 2015, print area totals, suppress any NULL
-		```
+		  *  r.stats - input rasterized PA+LC 1995+LC 2015, print area totals, suppress any NULL
+  ```
 _____________________________________________________________________________________
 
 
