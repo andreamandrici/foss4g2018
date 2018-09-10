@@ -201,9 +201,10 @@ Explore datasets
      ```
     
      *  LC: PTA r.stats
-        *  r.stats - input rasterized PA+LC 1995, print area totals, suppress any NULL
+     
+     `*  r.stats - input rasterized PA+LC 1995, print area totals, suppress any NULL`
      *  LCC: PTA r.stats
-        *  r.stats - input rasterized PA+LC 1995+LC 2015, print area totals, suppress any NULL
+        `*  r.stats - input rasterized PA+LC 1995+LC 2015, print area totals, suppress any NULL`
 
 _____________________________________________________________________________________
 
@@ -213,30 +214,30 @@ ________________________________________________________________________________
 ###  Using Postgis as a data store (PGAdmin, QGIS, BASH)
 
 1. Create foss4g DB in PGAdmin
-				*  Connect to localhost server
-				*  Create new db foss4g, user=user
-				*  Connect to brand new foss4g DB
-				*  Create a new object/new extension/postgis in foss4g DB
+   *  Connect to localhost server
+   *  Create new db foss4g, user=user
+   *  Connect to brand new foss4g DB
+   *  Create a new object/new extension/postgis in foss4g DB
 2.  Connect to foss4g DB from QGIS
-				*  Create a new PostGIS connection
-				  *  host=localhost
-				  *  database=foss4g
-				  *  username and pwd=user (save)
-				  *  only look in the public schema
-				  *  also list tables with no geometry
-				*  refresh and connect from the tembo icon
+    *  Create a new PostGIS connection
+    *  host=localhost
+    *  database=foss4g
+    *  username and pwd=user (save)
+    *  only look in the public schema
+    *  also list tables with no geometry
+    *  refresh and connect from the tembo icon
 3.  Import dataset into foss4g DB from QGIS
 
-  Load country_dissolved, protected areas and species
+    Load country_dissolved, protected areas and species
 
-				*  open database/db manager
-				*  select PostGIS/foss4g/public from the tree
-				*  import the loaded vectors (convert field names to lower case, create spatial index)
-				  *  country_dissolved
-				  *  protected_areas: pkey=wdpaid
-				  *  species: pkey=id_no
-				*  remove the original shapefiles
-				*  load the new objects from db_manager
+    *  open database/db manager
+    *  select PostGIS/foss4g/public from the tree
+    *  import the loaded vectors (convert field names to lower case, create spatial index)
+       *  country_dissolved
+       *  protected_areas: pkey=wdpaid
+       *  species: pkey=id_no
+    *  remove the original shapefiles
+    *  load the new objects from db_manager
 
 Quit QGIS, Disconnect and Drop foss4g DB from PGAdmin!
 
@@ -244,9 +245,11 @@ Quit QGIS, Disconnect and Drop foss4g DB from PGAdmin!
 
 From LXTerminal
 
-				*  cd /media/user/usbdata/foss4g/scripts/
-				*  ./script_03_bulk_db_creation.sh
-				
+```
+*  cd /media/user/usbdata/foss4g/scripts/
+*  ./script_03_bulk_db_creation.sh
+```
+
 From file manager, open the above script with Geany, and have a look at it and at related SQL code. It does:
 
 *  create db foss4g and install spatialite extension
