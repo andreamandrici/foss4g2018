@@ -95,7 +95,7 @@ At the end of the process, this folder should contain:
 *  species_19488.zip                                 
 *  wdpa.gdb
 
-Since the above files will be deleted during the next steps, we suggest to keep a copy of them on another partition (space on the flash key is not limitless).
+Since the above files will be deleted during the next steps, we suggest to keep a copy of them on another partition (space on the flash key is far from being limitless).
 
 ## Setup your system
 
@@ -127,13 +127,11 @@ If needed, setup your keyboard
 
 `*  ./script_00_clipper.sh`
 
-The above script, starting from data in DATA/original_datasets, will:
+The above [script](scripts/script_00_clipper.sh), starting from data in DATA/original_datasets, will:
 
 *  select Tanzanian protected areas from wdpa.gdb and create DATA/ProtectedAreas/protected_areas.shp
 *  select Tanzanian protected areas from wdpa.gdb and create DATA/ProtectedAreas/protected_areas.shp
 *  clip species polygons from redlist archives on area of interest polygon, append them and create DATA/Species/species.shp
-
-
 
 _____________________________________________________________________________________
 
@@ -270,6 +268,15 @@ From PGAdmin Query Editor, open foss4g/scripts/SQL/
 #### Spatial queries on intersecting vectors
 
 [Exercise 1](/scripts/sql/ex01_vector_intersection.sql)
+
+Follow the exercises:
+*  selecting and executing each block of numbered sql code
+
+   (eg: FROM `--- 1 - Protected Areas/SELECT the right FIELDS` included TO `--- 2 - Species/SELECT the right FIELDS` excluded)
+
+*  uncommenting the optional lines
+   
+   (eg: `-- wdpaid,` becomes  `wdpaid,`)
 
 #### Zonal statistics on continuous raster
 
