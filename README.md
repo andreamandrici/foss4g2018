@@ -105,25 +105,35 @@ Install a decent editor:
 
 ### offline
 
-Be sure to have correctly downloaded geany_\*.deb packages from the "About the system" section
+   Be sure to have correctly downloaded geany_\*.deb packages from the "About the system" section
 
-```
-*  Launch LXTerminal
-*  cd /media/user/usbdata/foss4g/scripts/			
-*  ./script_01_install_geany.sh
-```
+    ```
+    *  Launch LXTerminal
+    *  cd /media/user/usbdata/foss4g/scripts/			
+    *  ./script_01_install_geany.sh
+    ```
 
 ### online
 
-you need to connect to internet before; since unreliability of network in Tanzania, we suggest to not do it.
+   You need to connect to internet before; since unreliability of network in Tanzania, we suggest to not do it.
 
-`*  sudo apt-get install geany`
+    `*  sudo apt-get install geany (password is "user")`
 
-Password is "user".
-
-if needed, setup your keyboard
+If needed, setup your keyboard
 
 `*  ./script_02_reconfigure_keyboard.sh`
+
+## Prepare the data
+
+`*  ./script_00_clipper.sh`
+
+The above script, starting from data in DATA/original_datasets, will:
+
+*  select Tanzanian protected areas from wdpa.gdb and create DATA/ProtectedAreas/protected_areas.shp
+*  select Tanzanian protected areas from wdpa.gdb and create DATA/ProtectedAreas/protected_areas.shp
+*  clip species polygons from redlist archives on area of interest polygon, append them and create DATA/Species/species.shp
+
+
 
 _____________________________________________________________________________________
 
