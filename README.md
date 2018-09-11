@@ -107,17 +107,17 @@ Install a decent editor:
 
    Be sure to have correctly downloaded geany_\*.deb packages from the "About the system" section
 
-    ```
-    *  Launch LXTerminal
-    *  cd /media/user/usbdata/foss4g/scripts/			
-    *  ./script_01_install_geany.sh
-    ```
+   ```
+   *  Launch LXTerminal
+   *  cd /media/user/usbdata/foss4g/scripts/			
+   *  ./script_01_install_geany.sh
+   ```
 
 ### online
 
    You need to connect to internet before; since unreliability of network in Tanzania, we suggest to not do it.
 
-    `*  sudo apt-get install geany (password is "user")`
+   `*  sudo apt-get install geany (password is "user")`
 
 If needed, setup your keyboard
 
