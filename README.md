@@ -242,8 +242,8 @@ From LXTerminal
 ```
 
 From file manager, open the above [script](scripts/script_03_bulk_db_creation.sh) with Geany, and have a look at it and at related SQL code:
-*  [sl01_rename_geometry.sql](scripts/SQL/sl01_rename_geometry.sql)
-*  [sl02_landcover.sql](scripts/SQL/sl02_landcover.sql)
+*  [sl01_rename_geometry.sql](scripts/sql/sl01_rename_geometry.sql)
+*  [sl02_landcover.sql](scripts/sql/sl02_landcover.sql)
 
 It does:
 
@@ -269,7 +269,7 @@ From PGAdmin Query Editor, open foss4g/scripts/SQL/
 
 [Exercise 3](./scripts/sql/ex03_raster_extent.sql)
 
-If something of the above goes wrong, the following script will create the needed functions for the next step (only needed if something didn't work during the previous exercises)				
+If something of the above goes wrong, the following [script](script/script_04_create_functions.sh) will create the needed functions for the next step (only needed if something didn't work during the previous exercises)				
 
 From LXTerminal
 
@@ -287,7 +287,10 @@ From LXTerminal
 *  ./script_05_final.sh
 ```
 
-From file manager, open the above script with Geany, and have a look at it and at related SQL code. It does:
+From file manager, open the above [script](scripts/script_05_final.sh) with Geany, and have a look at it and at related SQL code:
+*  [sl01_rename_geometry.sql](scripts/sql/sl01_rename_geometry.sql)
+*  [sl02_landcover.sql](scripts/sql/sl02_landcover.sql)
+. It does:
 
 *  performs the raster analyis looping through each protected area, for each epoch
   *  using function created in the previous steps
