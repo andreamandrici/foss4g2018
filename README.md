@@ -241,7 +241,11 @@ From LXTerminal
 *  ./script_03_bulk_db_creation.sh
 ```
 
-From file manager, open the above [script](scripts/script_03_bulk_db_creation.sh) with Geany, and have a look at it and at related SQL code. It does:
+From file manager, open the above [script](scripts/script_03_bulk_db_creation.sh) with Geany, and have a look at it and at related SQL code:
+*  [sl01_rename_geometry.sql](scripts/SQL/sl01_rename_geometry.sql)
+*  [sl02_landcover.sql](scripts/SQL/sl02_landcover.sql)
+
+It does:
 
 *  create db foss4g and install spatialite extension
 *  import all the vectors with ogr2ogr
