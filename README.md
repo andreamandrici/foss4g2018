@@ -272,9 +272,16 @@ From PGAdmin Query Editor, open foss4g/scripts/SQL/
 Follow the exercises:
 *  selecting and executing each block of numbered sql code
 
-   (eg: FROM `--- 1 - Protected Areas/SELECT the right FIELDS` included TO `--- 2 - Species/SELECT the right FIELDS` excluded)
+   (eg: FROM
+   
+   `--- 1 - Protected Areas/SELECT the right FIELDS` included
+   
+   TO
+   
+   `--- 2 - Species/SELECT the right FIELDS` excluded
+   )
 
-*  uncommenting the optional lines
+*  uncommenting the optional lines to change query results
    
    (eg: `-- wdpaid,` becomes  `wdpaid,`)
 
