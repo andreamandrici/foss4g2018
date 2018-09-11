@@ -270,9 +270,11 @@ From PGAdmin Query Editor, open foss4g/scripts/SQL/
 [Exercise 1](/scripts/sql/ex01_vector_intersection.sql)
 
 Follow the exercises:
-*  selecting and executing each block of numbered sql code
+*  selecting and executing in sequence each block of numbered sql code
 
-   (eg: FROM
+   (eg:
+   
+   FROM
    
    `--- 1 - Protected Areas/SELECT the right FIELDS` included
    
@@ -281,9 +283,25 @@ Follow the exercises:
    `--- 2 - Species/SELECT the right FIELDS` excluded
    )
 
-*  uncommenting the optional lines to change query results
+*  commenting/uncommenting alternative lines to change query results
    
-   (eg: `-- wdpaid,` becomes  `wdpaid,`)
+   (eg:
+   ```
+   * -- all fields
+   -- wdpaid,
+   -- name,
+   -- marine,
+   -- geom
+   ```
+   becomes
+   ```
+   --* -- all fields
+   wdpaid,
+   name,
+   marine,
+   geom
+   ```
+   in the next run)
 
 #### Zonal statistics on continuous raster
 
