@@ -288,9 +288,12 @@ From LXTerminal
 ```
 
 From file manager, open the above [script](scripts/script_05_final.sh) with Geany, and have a look at it and at related SQL code:
-*  [sl01_rename_geometry.sql](scripts/sql/sl01_rename_geometry.sql)
-*  [sl02_landcover.sql](scripts/sql/sl02_landcover.sql)
-. It does:
+*  [sl04_pas.sql](scripts/sql/sl04_pas.sql)
+*  [sl05_pa_lc.sql](scripts/sql/sl05_pa_lc.sql)
+*  [sl06_pa_lc_1995_2015.sql](scripts/sql/sl06_pa_lc_1995_2015.sql)
+*  [sl07_get_pa_lc_1995_2015.sql](scripts/sql/sl07_get_pa_lc_1995_2015.sql).
+
+It does:
 
 *  performs the raster analyis looping through each protected area, for each epoch
   *  using function created in the previous steps
