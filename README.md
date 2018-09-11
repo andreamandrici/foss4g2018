@@ -269,7 +269,7 @@ From PGAdmin Query Editor, open foss4g/scripts/SQL/
 
 [Exercise 3](./scripts/sql/ex03_raster_extent.sql)
 
-If something of the above goes wrong, the following [script](script/script_04_create_functions.sh) will create the needed functions for the next step (only needed if something didn't work during the previous exercises)				
+If something of the above goes wrong, the following [script](scripts/script_04_create_functions.sh) will create the needed functions for the next step (only needed if something didn't work during the previous exercises)				
 
 From LXTerminal
 
