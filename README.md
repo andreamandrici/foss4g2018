@@ -62,7 +62,7 @@ The following links may require registration:
 3.  [UNEP-WCMC WDPA](https://www.protectedplanet.net):
 	  *  [current TZ WDPA](https://www.protectedplanet.net/country/TZ), click on "Download this dataset" on the top-right, and choose ".SHP" format.
 	
-	  Extract **all** the WDPA\__montyear_\_TZA-shapefile-polygons.* files from the downloaded zip, rename **each of them** as wdpa.\*, then zip them back in a wdpa.zip archive. You can delete the zip archive.
+	  Extract **all** the WDPA\__MonthYear_\_TZA-shapefile-**polygons**.* files from the downloaded zip, rename **each of them** as wdpa.\*, then compress them back in a **wdpa.zip** archive. You can delete the original zip archive and the extracted files.
 4.  [ESA CCI LC](https://www.esa-landcover-cci.org/):
     * ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1995-v2.0.7.tif
     * ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2015-v2.0.7.tif
