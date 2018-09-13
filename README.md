@@ -60,9 +60,9 @@ The following links may require registration:
 2.  [Marine Regions EEZ](http://www.marineregions.org/):
     *  [Tanzania EEZ](http://geo.vliz.be/geoserver/wfs?request=getfeature&service=wfs&version=1.0.0&typename=MarineRegions:eez&outputformat=SHAPE-ZIP&filter=%3CPropertyIsEqualTo%3E%3CPropertyName%3Emrgid%3C%2FPropertyName%3E%3CLiteral%3E8479%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E)
 3.  [UNEP-WCMC WDPA](https://www.protectedplanet.net):
-	  *  [WDPA current](http://wcmc.io/wdpa_current_release)
+	  *  [current TZ WDPA](https://www.protectedplanet.net/country/TZ), click on "Download this dataset" on the top-right, and choose ".SHP" format.
 	
-	  Extract the \*.gdb file from the downloaded zip and rename it as "wdpa.gdb", then delete the zip archive.
+	  Extract **all** the WDPA\__montyear_\_TZA-shapefile-polygons.* files from the downloaded zip, rename **each of them** as wdpa.\*, then zip them back in a wdpa.zip archive. You can delete the zip archive.
 4.  [ESA CCI LC](https://www.esa-landcover-cci.org/):
     * ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1995-v2.0.7.tif
     * ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2015-v2.0.7.tif
@@ -93,7 +93,7 @@ At the end of the process, this folder should contain:
 *  species_9194.zip
 *  species_12392.zip
 *  species_19488.zip                                 
-*  wdpa.gdb
+*  wdpa.zip
 
 Since the above files will be deleted during the next steps, we suggest to keep a copy of them on another partition (space on the flash key is far from being limitless).
 
