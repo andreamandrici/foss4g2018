@@ -1,0 +1,26 @@
+<VRTDataset rasterXSize="5020" rasterYSize="3881">
+  <SRS>GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433],AUTHORITY["EPSG","4326"]]</SRS>
+  <GeoTransform>  2.9338888888888889e+01,  2.7777777777777775e-03,  0.0000000000000000e+00, -9.8333333333333328e-01,  0.0000000000000000e+00, -2.7777777777777779e-03</GeoTransform>
+  <VRTRasterBand dataType="Byte" band="1">
+    <NoDataValue>0</NoDataValue>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">landcover_1995.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="5020" RasterYSize="3881" DataType="Byte" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="5020" ySize="3881" />
+      <DstRect xOff="0" yOff="0" xSize="5020" ySize="3881" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Byte" band="2">
+    <NoDataValue>0</NoDataValue>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">landcover_2015.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="5020" RasterYSize="3881" DataType="Byte" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="5020" ySize="3881" />
+      <DstRect xOff="0" yOff="0" xSize="5020" ySize="3881" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+</VRTDataset>
