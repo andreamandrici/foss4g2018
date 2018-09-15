@@ -385,9 +385,13 @@ EG:
 
 `kill 10122`
 
+_____________________________________________________________________________________
+
 ## Proceed to the [Web Gis Application session](https://github.com/lucageo/foss4g).
 
 <p style='text-align: right;'> <b>Andrea Mandrici</b> </p> 
+
+_____________________________________________________________________________________
 
 ### MANY THANKS TO:
 
