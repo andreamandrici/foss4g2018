@@ -340,7 +340,7 @@ ________________________________________________________________________________
 
 ## Publishing to the outside world
 
-The following part uses code developed by [Martino Boni](https://github.com/Martenz/local_cgi_rest), and slightly modified by Luca Battistella and Andrea Mandrici.
+The following part uses code developed by [Martino Boni](https://github.com/Martenz/local_cgi_rest), and slightly modified by [Luca Battistella](https://github.com/lucageo/Python_rest_services) and Andrea Mandrici.
 
 ### Deploying functions as REST services
 
@@ -385,7 +385,7 @@ EG:
 
 `kill 10122`
 
-## Proceed to the Web Gis Application session, developed by [Luca Battistella](https://github.com/lucageo/foss4g).
+## Proceed to the [Web Gis Application session](https://github.com/lucageo/foss4g).
 
 <p style='text-align: right;'> <b>Andrea Mandrici</b> </p> 
 
