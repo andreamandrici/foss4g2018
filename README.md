@@ -1,5 +1,5 @@
-# foss4g2018
-## Free and Open Source Geospatial Tools for Conservation Planning Workshop - FOSS4G 2018 - Dar Es Salaam
+# FOSS4G 2018 - Dar Es Salaam
+## Free and Open Source Geospatial Tools for Conservation Planning Workshop
 
 Step by step documentation for developing GIS processing and publish results through Restfull APIs 
 _____________________________________________________________________________________
@@ -83,6 +83,7 @@ The following links may require registration:
 Please copy downloaded and renamed datasets in /usbdata/foss4g/DATA/original_datasets folder.
 At the end of the process, this folder must contain (names are compulsory):
 
+*  cutters/
 *  eez.zip
 *  ESACCI-LC-L4-LCCS-Map-300m-P1Y-1995-v2.0.7.tif
 *  ESACCI-LC-L4-LCCS-Map-300m-P1Y-2015-v2.0.7.tif
