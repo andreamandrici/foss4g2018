@@ -81,7 +81,7 @@ The following links may require registration:
     Extract the \*.tif file from the downloaded zip and rename it as "gebco.tif", then delete the zip archive.
 
 Please copy downloaded and renamed datasets in /usbdata/foss4g/DATA/original_datasets folder.
-At the end of the process, this folder should contain:
+At the end of the process, this folder must contain (names are compulsory):
 
 *  eez.zip
 *  ESACCI-LC-L4-LCCS-Map-300m-P1Y-1995-v2.0.7.tif
@@ -93,17 +93,13 @@ At the end of the process, this folder should contain:
 *  species_9194.zip
 *  species_12392.zip
 *  species_19488.zip                                 
-*  wdpa.zip
-
-Since the above files will be deleted during the next steps, we suggest to keep a copy of them on another partition (space on the flash key is far from being limitless).
+*  wdpa.zip.
 
 ## Setup your system
 
 Boot with your external flash key.
 
 Install a decent editor:
-
-### offline
 
    Be sure to have correctly downloaded geany_\*.deb packages from the "About the system" section
 
@@ -113,12 +109,6 @@ Install a decent editor:
    *  ./script_01_install_geany.sh
    ```
 
-### online
-
-   You need to connect to internet before; since unreliability of network in Tanzania, we suggest to not do it.
-
-   `*  sudo apt-get install geany (password is "user")`
-
 If needed, setup your keyboard
 
 `*  ./script_02_reconfigure_keyboard.sh`
@@ -127,11 +117,7 @@ If needed, setup your keyboard
 
 `*  ./script_00_clipper.sh`
 
-The above [script](scripts/script_00_clipper.sh), starting from data in DATA/original_datasets, will:
-
-*  select Tanzanian protected areas from wdpa.gdb and create DATA/ProtectedAreas/protected_areas.shp
-*  select Tanzanian protected areas from wdpa.gdb and create DATA/ProtectedAreas/protected_areas.shp
-*  clip species polygons from redlist archives on area of interest polygon, append them and create DATA/Species/species.shp
+The above [script](scripts/script_00_clipper.sh) will preprocess data in DATA/original_datasets, and will create new files in subfolders of DATA (Countries,DEM,Landcover,ProtectedAreas,Species).
 
 _____________________________________________________________________________________
 
