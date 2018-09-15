@@ -354,11 +354,16 @@ ________________________________________________________________________________
 
 ## Publishing to the outside world
 
+The following part uses code developed by [Martino Boni](https://github.com/Martenz/local_cgi_rest), and slightly modified by Luca Battistella and Andrea Mandrici.
+
 ### Deploying functions as REST services
 
 From LXTerminal
 
 ```
+* cd /media/user/usbdata/foss4g/scripts/
+* ./script_06_rest.sh
+
 *  cd /media/user/usbdata/foss4g/scripts/rest/
 *  python server.py &
 ```
@@ -368,6 +373,7 @@ From Firefox
 ```
 *  visit http://localhost:8888/rest_doc.py
 ```
+and follow the links.
 
 To stop the rest server, from LXTerminal
 
@@ -393,7 +399,7 @@ EG:
 
 `kill 10122`
 
-## Proceed with the next session: [web development](/media/user/usbdata/foss4g/docs/docs2_web.html)
+## Proceed to the Web Gis Application session, developed by [Luca Battistella](https://github.com/lucageo/foss4g).
 
 <p style='text-align: right;'> <b>Andrea Mandrici</b> </p> 
 
