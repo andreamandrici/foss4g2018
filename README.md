@@ -1,4 +1,4 @@
-# foss4g2018 -- THIS REPO IS WORK IN PROGRESS -- PLEASE COME BACK NEXT WEEK!
+# foss4g2018
 ## Free and Open Source Geospatial Tools for Conservation Planning Workshop - FOSS4G 2018 - Dar Es Salaam
 
 Step by step documentation for developing GIS processing and publish results through Restfull APIs 
