@@ -356,9 +356,8 @@ From LXTerminal
 
 From Firefox
 
-```
-*  visit http://localhost:8888/rest_doc.py
-```
+visit [http://localhost:8888/rest_doc.py](http://localhost:8888/rest_doc.py)
+
 and follow the links.
 
 To stop the rest server, from LXTerminal
