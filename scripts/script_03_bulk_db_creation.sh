@@ -35,9 +35,8 @@ psql -d "foss4g" -c "CREATE EXTENSION postgis;"
 ogr2ogr \
 -overwrite \
 -dialect sqlite \
--sql "SELECT ADM0_CODE, ADM0_NAME, Geometry FROM country_land" \
+-sql "SELECT ADM0_CODE, ADM0_NAME, ST_MULTI(Geometry) FROM country_land" \
 -f "PostgreSQL"  PG:"$dbpar" $dpath/Countries/country_land.shp \
--lco FID=ADM0_CODE \
 -nlt "MULTIPOLYGON" \
 -nln country_land
 
@@ -45,9 +44,8 @@ ogr2ogr \
 ogr2ogr \
 -overwrite \
 -dialect sqlite \
--sql "SELECT MRGID, GeoName, Geometry FROM country_marine" \
+-sql "SELECT iso_ter1, GeoName, Geometry FROM country_marine" \
 -f "PostgreSQL" PG:"$dbpar" $dpath/Countries/country_marine.shp \
--lco FID=MRGID \
 -nlt "MULTIPOLYGON" \
 -nln country_marine
 
@@ -56,9 +54,8 @@ ogr2ogr \
 ogr2ogr \
 -overwrite \
 -dialect sqlite \
--sql "SELECT country_id, country_na AS country_name, Geometry FROM country_dissolved" \
+-sql "SELECT ADM0_CODE, Geometry FROM country_dissolved" \
 -f "PostgreSQL" PG:"$dbpar" $dpath/Countries/country_dissolved.shp \
--lco FID=country_id \
 -nlt "MULTIPOLYGON" \
 -nln country_dissolved
 
