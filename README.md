@@ -389,10 +389,6 @@ EG:
 
 <p style='text-align: right;'> <b>Andrea Mandrici</b> </p> 
 
-<p style='text-align: right;'> Your Text </p> 
-
-<div style="text-align: right"> your-text-here </div>
-
 ### MANY THANKS TO:
 
 Lucy Bastin, Martino Boni, Giacomo Delli, Eduardo Garcia Bendito, Luca Marletta, Christian Zanardi
