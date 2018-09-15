@@ -388,6 +388,9 @@ EG:
 ## Proceed to the [Web Gis Application session](https://github.com/lucageo/foss4g).
 
 <p style='text-align: right;'> <b>Andrea Mandrici</b> </p> 
+
+<p style='text-align: right;'> Your Text </p> 
+
 <div style="text-align: right"> your-text-here </div>
 
 ### MANY THANKS TO:
