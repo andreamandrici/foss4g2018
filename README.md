@@ -393,6 +393,8 @@ ________________________________________________________________________________
 
 _____________________________________________________________________________________
 
+For the offline html version of this document in the "docs" subfolder we used http://strapdownjs.com.
+
 ### MANY THANKS TO:
 
 Lucy Bastin, Martino Boni, Giacomo Delli, Eduardo Garcia Bendito, Luca Marletta, Christian Zanardi
