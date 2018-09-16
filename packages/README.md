@@ -5,5 +5,5 @@ Please copy here downloaded "geany" packages:
 
 At the end of the process this folder should contain:
 
-  geany_1.27-1_amd64.deb
-  geany-common_1.27-1_all.deb
+*  geany_1.27-1_amd64.deb
+*  geany-common_1.27-1_all.deb
